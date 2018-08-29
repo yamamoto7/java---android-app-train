@@ -12,6 +12,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setScreenMain();
+    }
+
+    private void setScreenMain(){
         setContentView(R.layout.activity_main);
 
         Button button1 = (Button) findViewById(R.id.button1);
@@ -31,5 +35,26 @@ public class MainActivity extends AppCompatActivity {
                         .show();
             }
         });
+
+        Button pagerButton = (Button)findViewById(R.id.pagerButton);
+        pagerButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                setScreenSub();
+            }
+        });
+
     }
+    private void setScreenSub(){
+        setContentView(R.layout.activity_sub);
+
+        Button returnButton = (Button)findViewById(R.id.returnButton);
+        returnButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setScreenMain();
+            }
+        });
+    }
+
 }
