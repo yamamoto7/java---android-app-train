@@ -12,4 +12,12 @@ public class StringView extends View {
         super(context);
         setBackgroundColor(Color.WHITE);
     }
+
+    @Override
+    protected void onDraw(Canvas canvas){
+        Paint paint = new Paint();
+        paint.setTextSize(30);
+        paint.setColor(Color.rgb(60, 200, 30));
+        canvas.drawText("画面サイズ" + getWidth() + "x" + getHeight(), 0, 60, paint);
+    }
 }
