@@ -42,5 +42,13 @@
             android:layout_alignParentEnd="true"
 
             android:src="@drawable/btn_image" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pager Button"
+            android:id="@+id/pagerButton"
+            />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
