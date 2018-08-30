@@ -1,5 +1,6 @@
 package com.example.k7287.apptrain2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -43,6 +44,16 @@ public class MainActivity extends AppCompatActivity {
                 setScreenSub();
             }
         });
+
+        Button pagerButton2 = (Button)findViewById(R.id.pagerButton2);
+        pagerButton2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplication(), SubActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
     private void setScreenSub(){
