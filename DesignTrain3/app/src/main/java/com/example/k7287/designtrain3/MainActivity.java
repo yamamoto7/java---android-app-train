@@ -21,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button tableButton = (Button)findViewById(R.id.table_view);
+        tableButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplication(), TableViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
