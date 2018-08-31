@@ -20,6 +20,11 @@
             android:name=".ListViewActivity"
             android:label="@string/app_name">
         </activity>
+        <activity
+            android:name=".TableViewActivity"
+            android:label="DesignTrain3">
+
+        </activity>
     </application>
 
 </manifest>
